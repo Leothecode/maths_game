@@ -1,0 +1,169 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle, #fff, #ccc);
+}
+
+#container{
+    height: 450px;
+    width: 500px;
+    background-color: #9DD2EA;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    /*box-shadow:border
+    r: [horizontal offset][vertical offset]
+    [blur radius][optional spread][color];*/
+    position: relative;
+}
+
+#score{
+    background-color: #f1ff92;
+    color: #888E5F;
+    padding: 10px;
+    position: absolute;
+    left:450px;
+    top: 10px;
+    box-shadow: 0px 4px 0px #9da853;
+}
+
+#correct{
+    position: absolute;
+    left:250px;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left:250px;
+    background-color: #de401a;
+    color: white;
+    padding: 11px; 
+    display: none;
+}
+
+#question{
+    width: 450px;
+    height: 150px; /*if box is bigger text can be adjusted using line-height*/
+    margin: 50px auto 10px auto;
+    /*[top][right][bottom][left]*/
+    background-color: #9da0ea;
+    box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sana-serif;
+    color: black;
+}
+
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color: #b481d9;
+    margin: 25px auto;
+    box-shadow:0px 4px #8153a8;
+    text-align: center;
+    line-height: 45px;
+}
+
+#choices{
+    height: 100px;
+    width: 450px;
+    margin: 5px auto;
+    /*[top][right][bottom][left]*/
+
+}
+
+.box{
+    width: 80px;
+    height: 80 px;
+    background-color: white;
+    float: left;
+    /* padding-bottom: 10px; */
+    /* padding-right: 10px; */
+    margin-right: 43px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box:hover{
+    background-color: #9c89f6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+
+}
+
+
+.box:active{
+ box-shadow: 0px 0px #6b54d3;
+ top: 4px;  
+}
+
+#box4{
+    margin-right: 0px;
+}
+
+#startreset{
+    width: 78px;
+    background-color: rgba(225,225,225,0.5);
+    margin:0 auto;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+}
+
+
+#startreset:hover{
+ background-color:#9c89f6 ;
+ color: white;
+ box-shadow: 0px 4px #6b54d3;
+}
+
+
+
+#startreset:active{
+box-shadow:#9DD2EA ;
+top: 4px;
+}
+
+
+
+#timeremaining{
+    width:152px ;
+    padding: 10px;
+    position: absolute;
+    top: 425px;
+    left: 360px;
+    background-color:rgba(182, 235, 36, 0.933) ;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    /*visibility: hidden;this still interact with the element unlike 
+    display:hidden that does not interact with elements*/
+    display: none;
+}
+
+#gameover{
+    height: 200px;
+    width: 500px;
+    background:linear-gradient(#f3ca68,#f3706c);
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 2;
+    display: none;
+}
